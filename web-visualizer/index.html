@@ -54,12 +54,24 @@
 
     let loader = new THREE.GLTFLoader();
     var a = window.location.href.split('?=')[1];
+    if (a == 'scene')
+    {
+      loader.load(`https://file-upload-and-view.herokuapp.com/files/scene.glb`,function(gltf){
+        mymodel = gltf.scene.children[0];
+        mymodel.scale.set(10,10,10);
+        scene.add(gltf.scene);
+        animate();
+      });
+    }
+    else
+    {
     loader.load(`./`+ a +`/scene.gltf`,function(gltf){
       mymodel = gltf.scene.children[0];
       mymodel.scale.set(10,10,10);
       scene.add(gltf.scene);
       animate();
     });
+    }
   }
   function animate(){
     renderer.render(scene,camera);
