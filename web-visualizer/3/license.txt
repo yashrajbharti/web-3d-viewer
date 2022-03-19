@@ -1,0 +1,11 @@
+Model Information:
+* title:	Hover Bike
+* source:	https://sketchfab.com/3d-models/hover-bike-564d8a247e034178aac9fa4358ee070e
+* author:	ABe_21 (https://sketchfab.com/AB_red)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Hover Bike" (https://sketchfab.com/3d-models/hover-bike-564d8a247e034178aac9fa4358ee070e) by ABe_21 (https://sketchfab.com/AB_red) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
