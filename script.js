@@ -41,17 +41,18 @@ dropzone.uploadFiles = function(files) {
 
     var file = files[i];
 
+    let formdata = new FormData();
+    formdata.append("file", file , file.name);
+    let headers = new Headers();
+    headers.append("Accept", "application/json");
+    let requestOptions = { method : 'POST', body: formdata, redirect: 'follow', headers: headers };
+    fetch("https://file-upload-and-view.herokuapp.com/upload", requestOptions)
+      .then(response => response.blob())
+      .then(result => location.href('./web-visualizer/index.html?=scene'))
+      .catch(error => console.log('error', error));
 
- let formdata = new FormData();
-   formdata.append("file", file , "scene.glb");
-   let headers = new Headers();
-   headers.append("Accept", "application/json");
-   let requestOptions = { method : 'POST', body: formdata, redirect: 'follow', headers:headers };
-   fetch("https://file-upload-and-view.herokuapp.com/uploads", requestOptions)
-     .then(response => response.blob())
-     .then(result => console.log(result))
-     .catch(error => console.log('error', error));
 
+      
 
     totalSteps = Math.round(Math.min(maxSteps, Math.max(minSteps, file.size / bytesPerStep)));
 
@@ -78,3 +79,37 @@ dropzone.uploadFiles = function(files) {
     }
   }
 }
+
+// hahahahhahahahhaha
+// haha
+
+// var arrowCoords = "haha";
+// var textValue = "feel your eyes";
+// var realH = 1;
+// var realW = 3;
+
+// console.log(arrowCoords, textValue, realW, realH);
+
+// const data ={
+//   "arrowCoords" : arrowCoords,
+//   "textValue" : textValue,
+//   "realW" : realW,
+//   "realH" : realH
+// }
+
+//   let headers = new Headers();
+//   headers.append("Content-Type", "application/json");
+
+
+//   let requestOptions = {
+//     method: 'POST',
+//     headers: headers,
+//     body: JSON.stringify(data),
+//     redirect: 'follow'
+//   };
+
+//   fetch("http://localhost:5000/codata", requestOptions)
+// .then(response => response.text())
+// .then(result => {location.href = ""})
+// .catch(error => console.log('error', error));
+
