@@ -1,4 +1,6 @@
 var array = ["One.","Two.","Three.", "Four.", "Five."];
+var button = document.getElementById('button');
+button.disabled = true;
 var dropzone = new Dropzone('#demo-upload', {
   previewTemplate: document.querySelector('#preview-template').innerHTML,
   parallelUploads: 1,
@@ -48,7 +50,7 @@ dropzone.uploadFiles = function(files) {
     let requestOptions = { method : 'POST', body: formdata, redirect: 'follow', headers: headers };
     fetch("https://file-upload-and-view.herokuapp.com/upload", requestOptions)
       .then(response => response.blob())
-      .then(result => location.href('./web-visualizer/index.html?=scene'))
+      .then(result => button.disabled = false)
       .catch(error => console.log('error', error));
 
 

@@ -58,7 +58,7 @@
     {
       loader.load(`https://file-upload-and-view.herokuapp.com/files/scene.glb`,function(gltf){
         mymodel = gltf.scene.children[0];
-        mymodel.scale.set(10,10,10);
+        mymodel.scale.set(100,100,100);
         scene.add(gltf.scene);
         animate();
       });
