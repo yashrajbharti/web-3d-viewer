@@ -10,5 +10,7 @@ The view button can be clicked after uploading the 3D model to view it.
   
  
 A separate Node.js Server is used to send post reuqest to upload the models. 
-[Repo link](https://github.com/yashrajbharti/node-server-for-3d-models)  
-A similar appraoch can be applied to create interactive 3D models with three.js, using a flutter app to control the models displayed in a Liquid Galaxy.
+[Repo link](https://github.com/yashrajbharti/node-server-for-3d-models)
+  
+A similar approach can be applied to create interactive 3D models with three.js, using a flutter app to control the models displayed in a Liquid Galaxy.  
+## [Deployed link](https://yashrajbharti.github.io/web-3d-viewer/)
