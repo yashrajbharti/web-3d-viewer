@@ -1,6 +1,7 @@
 # Three.js model visualizer (Concept)
 ## Screens 
 ![](https://i.ibb.co/n8Mzm7V/Screenshot-2022-03-23-at-12-13-50-AM.png)
+![](https://i.ibb.co/hdRp0j8/Screenshot-2022-03-23-at-12-14-24-AM.png)
 ![](https://i.ibb.co/93bhn3L/Screenshot-2022-03-23-at-12-15-08-AM.png)
   
 The view button can be clicked after uploading the 3D model to view it.
